@@ -9,5 +9,35 @@
  */
 
 {
+    "common-text": {
+        "scope": "asow-core.ipow-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "ui/commonText"
+    },
+    "heading": {
+        "scope": "asow-core.ipow-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "ui/heading"
+    },
+    "text": {
+        "scope": "asow-core.ipow-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "ui/text"
+    },
+    "theme": {
+        "scope": "asow-core.ipow-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "theme"
+    },
+    "utils": {
+        "scope": "asow-core.ipow-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "utils"
+    },
     "$schema-version": "14.9.0"
 }

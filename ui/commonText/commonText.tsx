@@ -3,8 +3,12 @@ import { __DEV__ } from '@chakra-ui/utils';
 import * as React from 'react';
 import { enumList, getEnumProperty } from './enum';
 
-import { Text as ChakraText, TextProps as ChakraTextProps } from '@chakra-ui/react';
-import { isString, isObject } from '@mik-technology/mik-ui.common.utils';
+import {
+  Text as ChakraText,
+  TextProps as ChakraTextProps,
+} from '@chakra-ui/react';
+
+import { isObject, isString } from '@asow-core/ipow-ui.utils';
 
 interface ResponsiveObj {
   base?: number | string;

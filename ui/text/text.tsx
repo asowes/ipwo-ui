@@ -1,11 +1,12 @@
 import { forwardRef } from '@chakra-ui/system';
 import { __DEV__ } from '@chakra-ui/utils';
 import * as React from 'react';
+
 import {
   getTagStyle,
   CommonText,
   TextProps,
-} from '@mik-technology/mik-ui.ui.common-text';
+} from '@asow-core/ipow-ui.common-text';
 
 export type { TextProps };
 export { getTagStyle };

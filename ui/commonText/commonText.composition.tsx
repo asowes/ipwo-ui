@@ -1,9 +1,8 @@
 import React from 'react';
 import { Stack, ChakraProvider } from '@chakra-ui/react';
 import { css } from '@emotion/css';
-import { getTagStyle, CommonText } from '@mik-technology/mik-ui.ui.common-text';
-import theme from '@mik-technology/new_core.theme';
-import 'michaels-ssr/styles/global.css';
+import { getTagStyle, CommonText } from '@asow-core/ipow-ui.common-text';
+import theme from '@asow-core/ipow-ui.theme';
 
 const HeadingGroup = css`
   width: 1200px;
@@ -37,7 +36,7 @@ export function BasicText() {
           tagName={{ base: 'T1', md: 'T2', lg: 'T3', xl: 'TX1' }}
           as="h1"
           isTruncated
-          color={theme.colors.primary.default}
+          color={primaryColor}
         >
           T1 See how Michaels can meet all of your Maker needs
         </CommonText>
@@ -47,77 +46,77 @@ export function BasicText() {
           isTruncated
           color={primaryColor}
         >
-          TX1 Find fun and interesting projects! Check out our fun family projects! Sign
-          up for fun classes and events suitable for all ages and skill levels taught by
-          our respected Teachers.
+          TX1 Find fun and interesting projects! Check out our fun family
+          projects! Sign up for fun classes and events suitable for all ages and
+          skill levels taught by our respected Teachers.
         </CommonText>
       </div>
       <div className={HeadingGroup}>
         <div className={HeadingGroupTitle}>TX1 - 10</div>
         <Stack spacing={50}>
           <CommonText tagName="TX1" isTruncated color={primaryColor}>
-            TX1 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX1 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX2" isTruncated color={basicColor}>
-            TX2 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX2 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX3" isTruncated color={basicColor}>
-            TX3 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX3 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX4" isTruncated color={basicColor}>
-            TX4 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX4 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX5" isTruncated color={basicColor}>
-            TX5 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX5 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX6" color={basicColor}>
-            TX6 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX6 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX7" isTruncated color={basicColor}>
-            TX7 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX7 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX8" isTruncated color={basicColor}>
-            TX8 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX8 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX9" isTruncated color={basicColor}>
-            TX9 Find fun and interesting projects! Check out our fun family projects! Sign
-            up for fun classes and events suitable for all ages and skill levels taught by
-            our respected Teachers.
+            TX9 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
           <CommonText tagName="TX10" color={basicColor}>
-            TX10 Find fun and interesting projects! Check out our fun family projects!
-            Sign up for fun classes and events suitable for all ages and skill levels
-            taught by our respected Teachers.
+            TX10 Find fun and interesting projects! Check out our fun family
+            projects! Sign up for fun classes and events suitable for all ages
+            and skill levels taught by our respected Teachers.
           </CommonText>
         </Stack>
       </div>
       <div className={HeadingGroup}>
         <div className={HeadingGroupTitle}>A-1 A-2</div>
         <CommonText tagName="A-1" color={primaryColor}>
-          A-1 Find fun and interesting projects! Check out our fun family projects! Sign
-          up for fun classes and events suitable for all ages and skill levels taught by
-          our respected Teachers.
+          A-1 Find fun and interesting projects! Check out our fun family
+          projects! Sign up for fun classes and events suitable for all ages and
+          skill levels taught by our respected Teachers.
         </CommonText>
         <CommonText tagName="A-2" color={basicColor}>
-          A-2 Find fun and interesting projects! Check out our fun family projects! Sign
-          up for fun classes and events suitable for all ages and skill levels taught by
-          our respected Teachers.
+          A-2 Find fun and interesting projects! Check out our fun family
+          projects! Sign up for fun classes and events suitable for all ages and
+          skill levels taught by our respected Teachers.
         </CommonText>
       </div>
     </ChakraProvider>

@@ -1,4 +1,5 @@
-import { isEmptyObject } from '@mik-technology/mik-ui.common.utils';
+import { isEmptyObject } from '@asow-core/ipow-ui.utils';
+
 export const enumList = {
   TX1: {
     fontFamily: 'inherit',

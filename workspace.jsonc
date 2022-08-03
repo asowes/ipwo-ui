@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-org.my-scope"
+    "defaultScope": "asow-core.ipow-ui"
   },
   /**
    * main configuration for component dependency resolution.
@@ -51,7 +51,19 @@
       "peerDependencies": {
         "@testing-library/react": "^12.1.5",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "@chakra-ui/form-control": "^1.5.2",
+        "@chakra-ui/hooks": "^1.7.1",
+        "@chakra-ui/icon": "^1.1.12",
+        "@chakra-ui/react": "^1.8.3",
+        "@chakra-ui/spinner": "^1.2.1",
+        "@chakra-ui/react-utils": "^1.2.1",
+        "@chakra-ui/system": "^1.12.1",
+        "@chakra-ui/utils": "^1.0.0",
+        "@emotion/css": "^11.1.3",
+        "@emotion/react": "^11",
+        "@emotion/styled": "^11",
+        "framer-motion": "^4.1.17",
       }
     }
   },

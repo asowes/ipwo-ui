@@ -6,7 +6,9 @@ export function isNumber(value: any): value is number {
 }
 
 export function isNotNumber(value: any) {
-  return typeof value !== 'number' || Number.isNaN(value) || !Number.isFinite(value);
+  return (
+    typeof value !== 'number' || Number.isNaN(value) || !Number.isFinite(value)
+  );
 }
 
 export function isNumeric(value: any) {
@@ -23,7 +25,9 @@ export function isEmptyArray(value: any) {
 }
 
 // Function assertions
-export function isFunction<T extends Function = Function>(value: any): value is T {
+export function isFunction<T extends Function = Function>(
+  value: any
+): value is T {
   return typeof value === 'function';
 }
 
@@ -39,7 +43,11 @@ export function isUndefined(value: any): value is undefined {
 // Object assertions
 export function isObject(value: any): value is Dict {
   const type = typeof value;
-  return value != null && (type === 'object' || type === 'function') && !isArray(value);
+  return (
+    value != null &&
+    (type === 'object' || type === 'function') &&
+    !isArray(value)
+  );
 }
 
 export function isEmptyObject(value: any) {
@@ -71,17 +79,13 @@ export function isEmpty(value: any): boolean {
   return false;
 }
 
-// eslint-disable-next-line no-underscore-dangle
-export const __DEV__ = process.env.NODE_ENV !== 'production';
-
-// eslint-disable-next-line no-underscore-dangle
-export const __TEST__ = process.env.NODE_ENV === 'test';
-
 export function isRefObject(val: any): val is { current: any } {
   return 'current' in val;
 }
 
-export function isInputEvent(value: any): value is { target: HTMLInputElement } {
+export function isInputEvent(
+  value: any
+): value is { target: HTMLInputElement } {
   return value && isObject(value) && isObject(value.target);
 }
 

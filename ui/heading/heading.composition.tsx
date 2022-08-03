@@ -1,9 +1,8 @@
 import React from 'react';
 import { Stack, ChakraProvider } from '@chakra-ui/react';
 import { css } from '@emotion/css';
-import { Heading, getTagStyle } from '@mik-technology/mik-ui.ui.heading';
-import theme from '@mik-technology/new_core.theme';
-import 'michaels-ssr/styles/global.css';
+import theme from '@asow-core/ipow-ui.theme';
+import { Heading, getTagStyle } from './heading';
 
 const HeadingGroup = css`
   width: 1200px;
@@ -42,22 +41,47 @@ export function BasicHeading() {
       <div className={HeadingGroup}>
         <div className={HeadingGroupTitle}>Title</div>
         <Stack spacing={10}>
-          <Heading tagName="T1" as="h1" isTruncated color={theme.colors.primary.default}>
+          <Heading
+            tagName="T1"
+            as="h1"
+            isTruncated
+            color={theme.colors.primary.default}
+          >
             T1 See how Michaels can meet all of your Maker needs
           </Heading>
           <Heading tagName="T2" as="h2" color={theme.colors.gray[1000]}>
             T2 See how Michaels can meet all of your Maker needs
           </Heading>
-          <Heading tagName="T3" as="h3" isTruncated color={theme.colors.gray[600]}>
+          <Heading
+            tagName="T3"
+            as="h3"
+            isTruncated
+            color={theme.colors.gray[600]}
+          >
             T3 See how Michaels can meet all of your Maker needs
           </Heading>
-          <Heading tagName="T4" as="h4" isTruncated color={theme.colors.gray[500]}>
+          <Heading
+            tagName="T4"
+            as="h4"
+            isTruncated
+            color={theme.colors.gray[500]}
+          >
             T4 See how Michaels can meet all of your Maker needs
           </Heading>
-          <Heading tagName="T5" as="h5" isTruncated color={theme.colors.gray[400]}>
+          <Heading
+            tagName="T5"
+            as="h5"
+            isTruncated
+            color={theme.colors.gray[400]}
+          >
             T5 See how Michaels can meet all of your Maker needs
           </Heading>
-          <Heading tagName="T6" as="h6" isTruncated color={theme.colors.gray[300]}>
+          <Heading
+            tagName="T6"
+            as="h6"
+            isTruncated
+            color={theme.colors.gray[300]}
+          >
             T6 See how Michaels can meet all of your Maker needs
           </Heading>
         </Stack>
